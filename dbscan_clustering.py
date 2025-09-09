@@ -7,7 +7,7 @@ from sklearn.manifold import TSNE
 
 #---------------------------- DBSCAN --------------------------------#
 # Đọc dữ liệu
-df = pd.read_csv('source/data/input/breast_cancer_dataset.csv')
+df = pd.read_csv('data/input/breast_cancer_dataset.csv')
 
 # Chuyển đổi dữ liệu thành mảng NumPy
 X = df.select_dtypes(include=[np.number]).values
@@ -80,7 +80,7 @@ plt.xlabel('t-SNE Component 1')
 plt.ylabel('t-SNE Component 2')
 
 # Lưu hình
-output_path = 'source/data/output/tsne_dbscan_clustering.png'
+output_path = 'data/output/tsne_dbscan_clustering.png'
 plt.savefig(output_path)
 print(f"Saved t-SNE graph at: {output_path}")
 

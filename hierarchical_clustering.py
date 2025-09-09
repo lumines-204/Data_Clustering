@@ -68,12 +68,12 @@ def cut_dendrogram(linked, n_clusters=None, distance_threshold=None):
     elif distance_threshold is not None:
         clusters = fcluster(linked, distance_threshold, criterion='distance')   # cắt theo khoảng cách (distance)
     else:
-        raise ValueError("Cần phải chỉ định n_clusters hoặc distance_threshold.")
+        raise ValueError("Either n_clusters or distance_threshold must be specified.")
     return clusters
 
 #---------------------------- HIỂN THỊ DỮ LIỆU GOM NHÓM --------------------------------#
 # Đọc dữ liệu
-df = pd.read_csv('source/data/input/breast_cancer_dataset.csv')
+df = pd.read_csv('data/input/breast_cancer_dataset.csv')
 
 # Clustering
 linked = hierarchical_clustering(df.iloc[:, :2], method='ward')
@@ -196,7 +196,7 @@ plt.xlabel('t-SNE Component 1')
 plt.ylabel('t-SNE Component 2')
 
 # Lưu biểu đồ
-output_path = 'source/data/output/tsne_hierarchical_clustering.png'
+output_path = 'data/output/tsne_hierarchical_clustering.png'
 plt.savefig(output_path)
 print(f"Saved t-SNE graph at: {output_path}")
 

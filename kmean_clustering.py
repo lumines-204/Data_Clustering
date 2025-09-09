@@ -95,7 +95,7 @@ def plot_kmeans_2d(X, labels, centroids, k, title):
     plt.title(title)
 
 # Đọc file CSV
-df = pd.read_csv('source/data/input/breast_cancer_dataset.csv')
+df = pd.read_csv('data/input/breast_cancer_dataset.csv')
 
 # Loại bỏ cột target nếu có
 if 'target' in df.columns:
@@ -119,7 +119,7 @@ for label, count in zip(unique_labels, counts):
 plot_kmeans_2d(X, labels, centroids, k, 'K-means (Manhattan Distance)')
 
 # Lưu biểu đồ vào file
-output_path = 'source/data/output/kmeans_2d_plot.png'
+output_path = 'data/output/kmeans_2d_plot.png'
 plt.savefig(output_path)
 print(f"The 2D chart has been saved at: {output_path}")
 
