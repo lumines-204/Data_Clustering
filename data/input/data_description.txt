@@ -1,0 +1,15 @@
+Breast Cancer Wisconsin (Diagnostic) – Ung thư vú
+
+Mô tả: Tập dữ liệu Breast Cancer Wisconsin (Diagnostic) là một bộ dữ liệu phổ biến được sử dụng trong 
+các bài toán phân loại. Tập dữ liệu này rất hữu ích trong các bài toán học máy, đặc biệt là phân loại 
+và có thể sử dụng để huấn luyện các mô hình phân loại trong các ứng dụng y tế. Tập dữ liệu được sử 
+dụng nhằm thực nghiệm hiệu quả phân loại dữ liệu của mô hình so với nhãn dữ liệu được đánh sẵn.
+
+Thông tin:
+- Số lượng mẫu: 569 mẫu
+- Số lượng đặc trưng: 30 đặc trưng (biến)
+- Nhãn mục tiêu: 2 lớp (Malignant – Ung thư ác tính, Benign – Không ung thư):
+	+ 0: Benign (không ung thư) – 212 mẫu
+	+ 1: Malignant (ung thư ác tính) – 357 mẫu
+- Tập dữ liệu gồm 30 đặc trưng (biến), mỗi đặc trưng được tính toán từ các phép đo hình học của tế 
+bào ung thư vú. 
