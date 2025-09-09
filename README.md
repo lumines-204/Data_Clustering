@@ -66,13 +66,13 @@ Kết quả sẽ được lưu trong thư mục `Data_Clustering/data/output/`.
 Một số ví dụ trực quan hóa từ dự án:
 
 - **K-Means 2D Scatter Plot**  
-  ![KMeans](Data_Clustering/data/output/kmeans_2d_plot.png)
+  ![KMeans](data/output/kmeans_2d_plot.png)
 
 - **DBSCAN với TSNE**  
-  ![DBSCAN](Data_Clustering/data/output/tsne_dbscan_clustering.png)
+  ![DBSCAN](data/output/tsne_dbscan_clustering.png)
 
 - **Hierarchical Clustering với TSNE**  
-  ![Hierarchical](Data_Clustering/data/output/tsne_hierarchical_clustering.png)
+  ![Hierarchical](data/output/tsne_hierarchical_clustering.png)
 
 ---
 
